@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">XTracker</string>
+    <string name="session_button_top">Start</string>
+    <string name="session_btn_middle">Pause</string>
+    <string name="session_btn_bottom">End</string>
+    <string name="activity_btn_left">Add/Remove time</string>
+    <string name="activity_btn_top">Home</string>
+    <string name="activity_btn_bottom">Delete</string>
+    <string name="activity_btn_right">Start Session</string>
+    <string name="activity_text_1">You\'re tracking for :</string>
+    <string name="activity_text_2">You have put this amount of time into it: </string>
+    <string name="add_time_hours">Hours:</string>
+    <string name="add_time_minutes">Minutes:</string>
+    <string name="add_time_seconds">Seconds:</string>
+    <string name="hint_add_time_hours">Leave empty for 0</string>
+    <string name="hint_add_time_minutes">Leave empty for 0</string>
+    <string name="hint_add_time_seconds">Leave empty for 0</string>
+    <string name="add_time_btn">Update time</string>
+    <string name="add_activity_text">New Activity:</string>
+    <string name="add_activity_btn">Add new activity</string>
+    <string name="add_activity_hint">Enter the name of the activity</string>
+    <string name="add_activity_parent"> Parent of activity :</string>
+    <string name="add_activity_spinner_prompt">Choose a parent</string>
+    <string name="change_time_toggle_ON">Remove</string>
+    <string name="change_time_toggle_OFF">Add</string>
+    <string name="add_activity_tv3">Starting time</string>
+    <string name="add_activity_starting_time_btn">Use Parents time</string>
+    <string name="add_activity_editText_hint">0H 0M 0S</string>
+</resources>

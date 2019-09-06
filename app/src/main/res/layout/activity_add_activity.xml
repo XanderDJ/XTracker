@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_add_activity">
+
+    <TextView
+        android:id="@+id/addActivityText"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:labelFor="@id/addActivityEdit"
+        android:text="@string/add_activity_text"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toBottomOf="@+id/addActivityEdit"
+        app:layout_constraintEnd_toStartOf="@+id/addActivityEdit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/activity_add_activity"
+        app:layout_constraintTop_toTopOf="@+id/addActivityEdit"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/addActivityEdit"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/add_activity_spinner"
+        app:layout_constraintEnd_toEndOf="@id/activity_add_activity"
+        app:layout_constraintTop_toTopOf="@id/activity_add_activity"
+        app:layout_constraintVertical_bias="0.857"
+        tools:text="@string/add_activity_hint" />
+
+    <Button
+        android:id="@+id/addActivityBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="addActivity"
+        android:text="@string/add_activity_btn"
+        app:layout_constraintBottom_toBottomOf="@id/activity_add_activity"
+        app:layout_constraintEnd_toEndOf="@id/activity_add_activity"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@id/activity_add_activity" />
+
+    <TextView
+        android:id="@+id/addActivityText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:labelFor="@id/add_activity_spinner"
+        android:text="@string/add_activity_parent"
+        app:layout_constraintBottom_toBottomOf="@+id/add_activity_spinner"
+        app:layout_constraintEnd_toEndOf="@+id/addActivityText"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="@+id/addActivityText"
+        app:layout_constraintTop_toTopOf="@+id/add_activity_spinner" />
+
+    <!-- TODO make spinner to allow for selecting a parent along with the option to choose None-->
+    <Spinner
+        android:id="@+id/add_activity_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="396dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/addActivityEdit"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/addActivityEdit"
+        android:prompt="@string/add_activity_spinner_prompt"/>
+
+    <TextView
+        android:id="@+id/add_activity_starting_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/add_activity_start_et"
+        android:text="@string/add_activity_tv3"
+        app:layout_constraintBottom_toBottomOf="@+id/add_activity_start_et"
+        app:layout_constraintEnd_toEndOf="@+id/addActivityText2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/addActivityText2"
+        app:layout_constraintTop_toTopOf="@+id/add_activity_start_et"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/add_activity_start_et"
+        android:layout_width="179dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/add_activity_editText_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/addActivityBtn"
+        app:layout_constraintEnd_toEndOf="@+id/add_activity_spinner"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/addActivityEdit"
+        app:layout_constraintTop_toBottomOf="@+id/add_activity_spinner"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <Button
+        android:id="@+id/add_activity_btn"
+        android:layout_width="81dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorPrimary"
+        android:onClick="changeTime"
+        android:text="@string/add_activity_starting_time_btn"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/add_activity_start_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add_activity_start_et"
+        app:layout_constraintTop_toTopOf="@+id/add_activity_start_et" />
+</android.support.constraint.ConstraintLayout>
